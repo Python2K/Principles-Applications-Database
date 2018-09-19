@@ -73,7 +73,7 @@ FROM Sailors S, Reserves R #涉及到的表，同时给Sailors取一个**别名S
 
 WHERE S.sid=R.sid AND R.bid=103 #满足条件
 
-![sqlsearch](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/sqlsearch.png)
+![sqlsearch](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/sqlsearch.png?raw=true)
 
 ---
 
@@ -239,7 +239,7 @@ WHERE NOT EXISTS (SELECT B.bid
 
 例：
 
-![operators](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/operators.png)
+![operators](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/operators.png?raw=true)
 
 
 
@@ -248,7 +248,7 @@ WHERE NOT EXISTS (SELECT B.bid
 * GROUP BY:grouping-list
 * HAVING :group-qualification
 
-**例：每一个rating中最年龄水手的年龄，前提（每个级别中年龄大于18岁的人员大于2个的rating才符合条件）**![groupsearch](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/groupsearch.png)
+**例：每一个rating中最年龄水手的年龄，前提（每个级别中年龄大于18岁的人员大于2个的rating才符合条件）**![groupsearch](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/groupsearch.png?raw=true)
 
 ```sql
 内部运作：
@@ -267,7 +267,7 @@ last(列名)	最后一条记录	仅Access支持
 count(列名)	统计记录数	注意和count(*)的区别
 ```
 
-![group](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/group.png)
+![group](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/group.png?raw=true)
 
 **例：根据船的bid分组，计算各分组红船的个数**
 
@@ -347,7 +347,7 @@ WHERE Temp.avgage=(SELECT MIN(Temp.avgage)
 
 语法图：
 
-![castexpression](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/castexpression.png)
+![castexpression](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/castexpression.png?raw=true)
 
 
 
@@ -357,7 +357,7 @@ WHERE Temp.avgage=(SELECT MIN(Temp.avgage)
 2. 改变计算的精度：CAST(elevation AS Decimal(5,0))
 3. 给空值赋予一个类型，让来符合计算的要求：
 
-![castexample](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/castexample.png)
+![castexample](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/castexample.png?raw=true)
 
 ---
 
@@ -382,7 +382,7 @@ FROM Officers;
 ```
 
 **例：当type='chain saw'时,对accidents求合，否则等于0e0，然后除以xxx，算出概率**
-![Screen Shot 2018-08-14 at 3.52.18 PM](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/Screen Shot 2018-08-14 at 3.52.18 PM.png)
+![Screen Shot 2018-08-14 at 3.52.18 PM](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/Screen Shot 2018-08-14 at 3.52.18 PM.png?raw=true)
 
 ---
 
@@ -495,7 +495,7 @@ WHERE salary>100000
 
 *例2：经典零件搜索问题，主零件part，子零件subpart，每个主零件需要多少子零件QTY，要查询一个飞机机翼总共需要多少铆钉*
 
-![Screen Shot 2018-08-21 at 2.58.18 PM](/Users/neilyo/Documents/读书笔记/数据库原理与应用/images/Screen Shot 2018-08-21 at 2.58.18 PM.png)
+![Screen Shot 2018-08-21 at 2.58.18 PM](https://github.com/Python2K/Principles-Applications-Database/blob/master/images/Screen Shot 2018-08-21 at 2.58.18 PM.png?raw=true)
 
 ```sql
 与例1思路一样，但是与例1不同的是，查询出的表都是1个零件的内容，需要做计算，才能算出多少个铆钉
